@@ -112,7 +112,7 @@ By applying these techniques may impact the overall performance of the model. It
 
 ### Most Computationally Expensive Layers
 
-I have added a table with the most expensive layer in each model, along with the time it takes to compute. Please note that these values are placeholders, and you should replace them with the actual values obtained from your experiments.
+I have added a table with the most expensive layer in each model, along with the time it takes to compute. 
 
 | Model       | Most Expensive Layer | Time (ms) |
 |-------------|----------------------|-----------|
