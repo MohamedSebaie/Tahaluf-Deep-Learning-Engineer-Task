@@ -123,10 +123,11 @@ By focusing on optimizing these layers, we can significantly decrease the overal
 In this project, we successfully built a clothing article classifier using machine learning techniques. The classifier achieved satisfactory performance on the imbalanced dataset using the ConvNeXt tiny feature extraction model from TensorFlow Hub with 5-fold cross-validation. We also compared different approaches and demonstrated the advantages of using pre-trained models for feature extraction in handling imbalanced datasets and improving classification performance.
 
 ## Future Works
-- Combine a larger dataset to make the model more generalized and solve the imbalanced classes
-- Apply more data augmentatoin techniques
-- Use light models like EfficientNet to improve the performace and reduce the FLOPs and MACCs
+- Combine a larger dataset to make the model more generalized and solve the imbalanced classes.
+- Apply more data augmentatoin techniques.
+- Use light models like EfficientNet to improve the performace and reduce the FLOPs and MACCs.
 - Breakdown the ConvNext model to get the most optimized version from it and calculates its RF and use the PyTorch Version.
+- Applying Hyperparameter Tuning Optimization Techniques like Bayesian Optimizer.
 
 ## Report
 The attached Report discuss Receptive field and discuss FLOPs and MACCs Results.
