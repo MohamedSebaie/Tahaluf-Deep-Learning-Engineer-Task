@@ -128,7 +128,7 @@ In this project, we successfully built a clothing article classifier using machi
 - Combine a larger dataset to make the model more generalized and solve the imbalanced classes
 - Apply more data augmentatoin techniques
 - Use light models like EfficientNet to improve the performace and reduce the FLOPs and MACCs
-- Breakdown the ConvNext model to get the most optimized version from it.
+- Breakdown the ConvNext model to get the most optimized version from it and calculates its RF.
 
 ## Report
 This Report discuss Receptive field and discuss FLOPs and MACCs.
