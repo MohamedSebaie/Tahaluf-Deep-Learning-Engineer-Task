@@ -3,6 +3,8 @@
 
 # Clothing Article Classifier
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1A5TttXuUtQbCEeGEidDyCGvWiyakHLvk?usp=sharing)
+
 This repository contains the code and resources for a clothing article classifier using machine learning techniques. The classifier is designed to identify and categorize different types of clothing items from high-resolution images.
 
 ## Table of Contents
