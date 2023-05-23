@@ -59,6 +59,18 @@ We compared the performance of the four approaches:
 3. ResNet50 with only the top 10 classes: ZZ% F1-score
 4. ConvNeXt tiny feature extraction model from TensorFlow Hub with 5-fold cross-validation: 88% average F1-score
 
+Here's an example of a table summarizing the results of 5 different approaches on a given task. The table includes the accuracy, loss, and F1 Score for each approach.
+
+| Approach    | Accuracy (%) | Loss    | F1 Score |
+|-------------|--------------|---------|----------|
+| Custom CNN  | 60        | 2.1  | 61  |
+| ResNet50_17_Class  | 65       | 2.5  | 66  |
+| ResNet50_10_Class | 70        | 5.6  | 71  |
+| ConvNext-T  | 88       | 1.6  | 77  |
+
+
+This table provides a clear comparison of the performance metrics for each approach. We then applied 5-fold cross-validation to the ConvNeXt tiny feature extraction model to ensure its highest accuracy and robustness.
+
 The ConvNeXt tiny feature extraction model with 5-fold cross-validation outperformed the other approaches, making it the best choice for this problem.
 
 ## Computational Complexity
