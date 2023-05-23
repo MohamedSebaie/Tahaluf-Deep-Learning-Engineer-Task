@@ -37,10 +37,10 @@ The images were resized and normalized to have zero mean and unit variance. We a
 
 We explored four different approaches:
 
-1. Custom CNN without any pre-trained models
-2. ResNet50 with 17 classes
-3. ResNet50 with only the top 10 classes to handle the imbalanced dataset
-4. ConvNeXt tiny feature extraction model from TensorFlow Hub
+1. Custom CNN without any pre-trained models.
+2. ResNet50 with 17 classes.
+3. ResNet50 with only the top 10 classes to handle the imbalanced dataset.
+4. ConvNeXt tiny feature extraction model from TensorFlow Hub.
 
 After comparing the performance and efficiency of these models, we chose the ConvNeXt tiny feature extraction model from TensorFlow Hub as our final approach, as it performed well on the imbalanced dataset. We then applied 5-fold cross-validation to the ConvNeXt tiny feature extraction model to ensure its highest accuracy and robustness.
 
@@ -50,28 +50,21 @@ We selected F1-score as our primary metric since it is suitable for imbalanced d
 
 ## Results and Discussion
 
-The final ConvNeXt tiny feature extraction model achieved an average F1-score of 88% using 5-fold cross-validation. This model performed well on the imbalanced dataset and demonstrated good generalization capabilities.
+The final ConvNeXt tiny feature extraction model achieved an average weighted F1-score of 88% using 5-fold cross-validation. This model performed well on the imbalanced dataset and demonstrated good generalization capabilities.
 
-We compared the performance of the four approaches:
+We compared the performance of the four approaches, The table includes the Weighted F1 Score for each approach:
 
-1. Custom CNN without any pre-trained models: XX% F1-score
-2. ResNet50 with 17 classes: YY% F1-score
-3. ResNet50 with only the top 10 classes: ZZ% F1-score
-4. ConvNeXt tiny feature extraction model from TensorFlow Hub with 5-fold cross-validation: 88% average F1-score
-
-Here's an example of a table summarizing the results of 5 different approaches on a given task. The table includes the accuracy, loss, and F1 Score for each approach.
-
-| Approach    | Accuracy (%) | Loss    | F1 Score |
-|-------------|--------------|---------|----------|
-| Custom CNN  | 60        | 2.1  | 61  |
-| ResNet50_17_Class  | 65       | 2.5  | 66  |
-| ResNet50_10_Class | 70        | 5.6  | 71  |
-| ConvNext-T  | 88       | 1.6  | 77  |
+| Approach    | F1 Score |
+|-------------|----------|
+| Custom CNN  |  66  |
+| ResNet50_17_Class  | 61  |
+| ResNet50_10_Class | 70  |
+| ConvNext-T  | 90  |
 
 
 This table provides a clear comparison of the performance metrics for each approach. We then applied 5-fold cross-validation to the ConvNeXt tiny feature extraction model to ensure its highest accuracy and robustness.
 
-The ConvNeXt tiny feature extraction model with 5-fold cross-validation outperformed the other approaches, making it the best choice for this problem.
+The ConvNeXt tiny feature extraction model with 5-fold cross-validation outperformed the other approaches, making it the best choice for this problem despite of the imbalance data which is very good results in the imbalance classes. But we take into acount the performance because in the deployment we have to make optimization between the accuracy and performance.
 
 ## Computational Complexity
 
