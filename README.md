@@ -1,9 +1,14 @@
 # Tahaluf-Deep-Learning-Engineer-Task
+- Clothing Article Classifier
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1A5TttXuUtQbCEeGEidDyCGvWiyakHLvk?usp=sharing)
 
+- YOLOX
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1FOyT-VY_G6vR_iRA5h8yuUoUBXZw7HKC?usp=sharing)
+
+- Weights and Biases Dashboard for YOLOX training on Custom Data
+[Wandb Dashboard](https://api.wandb.ai/links/mohamedsebaie1/3a7h5tl5) 
 
 # Clothing Article Classifier
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1A5TttXuUtQbCEeGEidDyCGvWiyakHLvk?usp=sharing)
 
 This repository contains the code and resources for a clothing article classifier using machine learning techniques. The classifier is designed to identify and categorize different types of clothing items from high-resolution images.
 
