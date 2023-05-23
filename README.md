@@ -23,7 +23,7 @@ In this project, we aim to build a clothing article classifier that can accurate
 
 ### Dataset
 
-We used the Clothing dataset (full, high resolution) from Kaggle, which contains 5,000 images of clothes from 20 different classes. The dataset is released under CC0. Some of the items are labeled "Not sure", "Others", or "Skip" and may contain labeling errors. We removed these three classes and trained our models on the remaining 17 classes, which are imbalanced.
+We used the Clothing dataset (full, high resolution) from [Kaggle](https://www.kaggle.com/datasets/agrigorev/clothing-dataset-full), which contains 5,000 images of clothes from 20 different classes. The dataset is released under CC0. Some of the items are labeled "Not sure", "Others", or "Skip" and may contain labeling errors. We removed these three classes and trained our models on the remaining 17 classes, which are imbalanced.
 
 ### Data Loading
 
@@ -31,7 +31,7 @@ We used Keras for data loading and preprocessing. The data was divided into trai
 
 ### Data Preprocessing
 
-The images were resized and normalized to have zero mean and unit variance. We also applied data augmentation techniques, such as random horizontal flipping and random rotation, to increase the training dataset's diversity and improve the classifier's generalization capabilities.
+The images were resized and normalized and we removed labeled "Not sure", "Others", or "Skip" and may contain labeling errors. We also applied data augmentation techniques, such as horizontal flipping, to increase the training dataset's diversity and improve the classifier's generalization capabilities.
 
 ## Model Architecture and Approach
 
