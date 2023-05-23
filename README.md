@@ -88,17 +88,28 @@ Table with the most expensive layer in each model, along with the time it takes 
 
 To decrease the FLOPS and MACCs, we can apply various techniques, such as:
 
-1. Decreasing the number of filters in convolutional layers: By reducing the number of filters, we can reduce the number of operations performed in each layer, thereby reducing FLOPS and MACCs.
+1. **Reduce the number of filters or neurons**: By reducing the number of filters in convolutional layers or neurons in fully connected layers, you can decrease the number of operations performed, thereby lowering FLOPs and MACCs.
 
-2. Using depth-wise separable convolutions: These convolutions split the standard convolution operation into two separate operations: a depth-wise convolution followed by a point-wise convolution. This can reduce the computational complexity significantly.
+2. **Apply network pruning**: Network pruning involves removing less important connections or weights from the network based on some criteria, such as their magnitude. By pruning the network, you can reduce its complexity without sacrificing much performance.
 
-3. Applying network pruning: By removing less important connections or weights from the network, we can reduce the complexity of the model without sacrificing much performance.
+3. **Reduce input size**: Decreasing the spatial dimensions of the input image can lower the number of operations performed in each layer, reducing FLOPs and MACCs.
 
-4. Reducing the input size: By reducing the spatial dimensions of the input image, we can decrease the number of operations performed in each layer.
+4. **Employ model compression techniques**: Techniques like quantization, knowledge distillation, and weight sharing can help reduce FLOPs and MACCs. Quantization reduces the precision of weights and activations, leading to a decrease in computational complexity. Knowledge distillation trains a smaller student network to mimic the behavior of a larger teacher network. Weight sharing involves grouping similar weights together, reducing the number of unique weights and operations.
+
+By applying these techniques may impact the overall performance of the model. It's essential to find a balance between reducing FLOPs and MACCs and maintaining acceptable accuracy and performance for your specific task.
 
 ### Most Computationally Expensive Layers
 
-In the table above, the most computationally expensive layers are typically the convolutional layers with the highest number of filters and the largest filter sizes. In the case of ResNet50, the most expensive layers might be the ones within the residual blocks.
+I have added a table with the most expensive layer in each model, along with the time it takes to compute. Please note that these values are placeholders, and you should replace them with the actual values obtained from your experiments.
+
+| Model       | Most Expensive Layer | Time (ms) |
+|-------------|----------------------|-----------|
+| Custom CNN  | Batch-Normalization  | 0.055     |
+| ResNet50    | ResBlock3_Conv3      | 0.45      |
+| ConvNext-T  | ConvNext_Block_FE    | 0.07      |
+
+
+In the table above, the most computationally expensive layers are typically the convolutional layers with the highest number of filters and the largest filter sizes. In the case of ResNet50, the most expensive layers is the ones within the residual blocks.
 
 By focusing on optimizing these layers, we can significantly decrease the overall computational complexity of the models.
 
