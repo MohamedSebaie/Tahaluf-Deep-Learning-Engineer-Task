@@ -14,6 +14,8 @@ This repository contains the code and resources for a clothing article classifie
 5. [Results and Discussion](#results-and-discussion)
 6. [Computational Complexity](#computational-complexity)
 7. [Conclusion](#conclusion)
+8. [Future Works](#future-works)
+9. [Report](#report)
 
 ## Introduction
 
@@ -46,7 +48,7 @@ After comparing the performance and efficiency of these models, we chose the Con
 
 ## Metrics
 
-We selected F1-score as our primary metric since it is suitable for imbalanced datasets and directly reflects the model's ability to correctly classify clothing items across all classes. Additionally, we monitored accuracy as a secondary metric.
+We selected F1-score as our primary metric since it is suitable for imbalanced datasets. Additionally, we monitored accuracy as a secondary metric.
 
 ## Results and Discussion
 
@@ -121,3 +123,14 @@ By focusing on optimizing these layers, we can significantly decrease the overal
 ## Conclusion
 
 In this project, we successfully built a clothing article classifier using machine learning techniques. The classifier achieved satisfactory performance on the imbalanced dataset using the ConvNeXt tiny feature extraction model from TensorFlow Hub with 5-fold cross-validation. We also compared different approaches and demonstrated the advantages of using pre-trained models for feature extraction in handling imbalanced datasets and improving classification performance.
+
+## Future Works
+- Combine a larger dataset to make the model more generalized and solve the imbalanced classes
+- Apply more data augmentatoin techniques
+- Use light models like EfficientNet to improve the performace and reduce the FLOPs and MACCs
+- Breakdown the ConvNext model to get the most optimized version from it.
+
+## Report
+This Report discuss Receptive field and discuss FLOPs and MACCs.
+
+
