@@ -64,7 +64,7 @@ We compared the performance of the four approaches, The table includes the Weigh
 
 This table provides a clear comparison of the performance metrics for each approach. We then applied 5-fold cross-validation to the ConvNeXt tiny feature extraction model to ensure its highest accuracy and robustness.
 
-The ConvNeXt tiny feature extraction model with 5-fold cross-validation outperformed the other approaches, making it the best choice for this problem despite of the imbalance data which is very good results in the imbalance classes. But we take into acount the performance because in the deployment we have to make optimization between the accuracy and performance.
+The ConvNeXt tiny feature extraction model with 5-fold cross-validation outperformed the other approaches, making it the best choice for this problem despite of the imbalance data which shows a very good results in the imbalance classes. But we should take into our account the performance because in the deployment we have to make optimization between the accuracy and performance.
 
 ## Computational Complexity
 
