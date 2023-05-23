@@ -100,15 +100,15 @@ The results are presented in the table below the most expensive layers:
 
 To decrease the FLOPS and MACCs, we can apply various techniques, such as:
 
-1. **Reduce the number of filters or neurons**: By reducing the number of filters in convolutional layers or neurons in fully connected layers, you can decrease the number of operations performed, thereby lowering FLOPs and MACCs.
+1. **Reduce the number of filters or neurons**: By reducing the number of filters in convolutional layers or neurons in fully connected layers, we can decrease the number of operations performed, thereby lowering FLOPs and MACCs.
 
-2. **Apply network pruning**: Network pruning involves removing less important connections or weights from the network based on some criteria, such as their magnitude. By pruning the network, you can reduce its complexity without sacrificing much performance.
+2. **Apply network pruning**: Network pruning involves removing less important connections or weights from the network based on some criteria, such as their magnitude. By pruning the network, we can reduce its complexity without sacrificing much performance.
 
 3. **Reduce input size**: Decreasing the spatial dimensions of the input image can lower the number of operations performed in each layer, reducing FLOPs and MACCs.
 
 4. **Employ model compression techniques**: Techniques like quantization, knowledge distillation, and weight sharing can help reduce FLOPs and MACCs. Quantization reduces the precision of weights and activations, leading to a decrease in computational complexity. Knowledge distillation trains a smaller student network to mimic the behavior of a larger teacher network. Weight sharing involves grouping similar weights together, reducing the number of unique weights and operations.
 
-By applying these techniques may impact the overall performance of the model. It's essential to find a balance between reducing FLOPs and MACCs and maintaining acceptable accuracy and performance for your specific task.
+By applying these techniques may impact the overall performance of the model. It's essential to find a balance between reducing FLOPs and MACCs and maintaining acceptable accuracy and performance for our specific task.
 
 ### Most Computationally Expensive Layers
 
