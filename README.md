@@ -6,7 +6,8 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1FOyT-VY_G6vR_iRA5h8yuUoUBXZw7HKC?usp=sharing)
 
 - Weights and Biases Dashboard for YOLOX training on Custom Data
-[Wandb Dashboard](https://api.wandb.ai/links/mohamedsebaie1/3a7h5tl5) 
+- [Wandb Dashboard](https://api.wandb.ai/links/mohamedsebaie1/3a7h5tl5) 
+- [Google Drive Link For The Weights](https://drive.google.com/drive/folders/1vk6Nuec6ekoAR0mDmX3x-nqzBTGgVtCH?usp=sharing)
 
 # Clothing Article Classifier
 
