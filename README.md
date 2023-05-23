@@ -68,9 +68,10 @@ This table provides a clear comparison of the performance metrics for each appro
 
 The ConvNeXt tiny feature extraction model with 5-fold cross-validation outperformed the other approaches, making it the best choice for this problem despite of the imbalance data which shows a very good results in the imbalance classes. But we should take into our account the performance because in the deployment we have to make optimization between the accuracy and performance.
 
-## Computational Complexity
+## Computational Complexity 
 
-We calculated the number of Floating Point Operations (FLOPS) and Multiply-accumulate operations (MACCs) per layer for the main convolutional and fully connected layers in the three models: Custom CNN and ResNet50. The results are presented in the table below the most expensive layers:
+We calculated the number of Floating Point Operations (FLOPS) and Multiply-accumulate operations (MACCs) per layer for the main convolutional and fully connected layers in the three models: Custom CNN and ResNet50. we used this [GitHub Repo](https://github.com/ckyrkou/Keras_FLOP_Estimator).
+The results are presented in the table below the most expensive layers:
 
 | Model       | Layer Name      | FLOPSx 10^6     | MACCsx 10^6 |
 |-------------|-----------------|-----------------|------------ |
