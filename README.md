@@ -129,6 +129,6 @@ In this project, we successfully built a clothing article classifier using machi
 - Breakdown the ConvNext model to get the most optimized version from it and calculates its RF and use the PyTorch Version.
 
 ## Report
-This Report discuss Receptive field and discuss FLOPs and MACCs.
+The attached Report discuss Receptive field and discuss FLOPs and MACCs Results.
 
 
