@@ -86,7 +86,7 @@ We calculated the number of Floating Point Operations (FLOPS) and Multiply-accum
 | ResNet50    | 7,735.46          | 3,867.73          |
 | ConvNext-T  | 4,500.46          | 2,250.23          |
 
-**Note: The Flops of ConvNext-T couldn't get it from the calculations because the tensorflowHub model is colsed, but in future i will try to revert it to its archiecturte. So the Flops in the table is from its benchmark**
+**Note: The Flops of ConvNext-T couldn't get it from the calculations because the tensorflowHub model is colsed, but in future i will try to revert it to its archiecturte, or use the PyTorch model. So the Flops in the table is from its benchmark**
 
 Table with the most expensive layer in each model, along with the time it takes to compute.
 
@@ -128,7 +128,7 @@ In this project, we successfully built a clothing article classifier using machi
 - Combine a larger dataset to make the model more generalized and solve the imbalanced classes
 - Apply more data augmentatoin techniques
 - Use light models like EfficientNet to improve the performace and reduce the FLOPs and MACCs
-- Breakdown the ConvNext model to get the most optimized version from it and calculates its RF.
+- Breakdown the ConvNext model to get the most optimized version from it and calculates its RF and use the PyTorch Version.
 
 ## Report
 This Report discuss Receptive field and discuss FLOPs and MACCs.
