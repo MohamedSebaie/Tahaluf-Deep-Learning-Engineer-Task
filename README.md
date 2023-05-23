@@ -88,9 +88,6 @@ We calculated the number of Floating Point Operations (FLOPS) and Multiply-accum
 
 **Note: The Flops of ConvNext-T couldn't get it from the calculations because the tensorflowHub model is colsed, but in future i will try to revert it to its archiecturte, or use the PyTorch model. So the Flops in the table is from its benchmark**
 
-Table with the most expensive layer in each model, along with the time it takes to compute.
-
-
 ### Decreasing FLOPS and MACCs
 
 To decrease the FLOPS and MACCs, we can apply various techniques, such as:
